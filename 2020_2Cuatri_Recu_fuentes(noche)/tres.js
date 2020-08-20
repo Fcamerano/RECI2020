@@ -75,18 +75,19 @@ function mostrar() {
 
 	// A)
 	if (contadorBariloche > contadorCataratas && contadorBariloche > contadorSalta) {
-		alert("El lugar mas visitado es Bariloche");
+		console.log("El lugar mas visitado es Bariloche");
 	}
 	else if (contadorCataratas > contadorBariloche && contadorCataratas > contadorSalta) {
-		alert("El lugar mas visitado es Cataratas");
+		console.log("El lugar mas visitado es Cataratas");
 	}
 	else {
-		alert("El destino mas visitado es Salta");
+		console.log("El destino mas visitado es Salta");
 	}
 
 	// B)
-	alert("El nombre del titular con mas pasajeros es: " + nombreConMasPasajeros);
+	
+	console.log("El nombre del titular con mas pasajeros es: " + nombreConMasPasajeros);
 
 	// C)
-	alert("El promedio de personas que viajan en invierno es de: " + promedioInvierno);
+	console.log("El promedio de personas que viajan en invierno es de: " + promedioInvierno);
 }

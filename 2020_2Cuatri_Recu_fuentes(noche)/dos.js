@@ -65,7 +65,7 @@ function mostrar()
   }while(respuesta == "si");
 
 
-  alert("El peso total es: " + acumuladorPeso); // A)
-  alert("La marca mas cara de los liquidos es: " + marcaLiquidoMasCaro); // B)
-  alert("La marca mas liviana de los solidos es: " + marcaSolidoMasLiviano); // C)
+  console.log("El peso total es: " + acumuladorPeso); // A)
+  console.log("La marca mas cara de los liquidos es: " + marcaLiquidoMasCaro); // B)
+  console.log("La marca mas liviana de los solidos es: " + marcaSolidoMasLiviano); // C)
 }
