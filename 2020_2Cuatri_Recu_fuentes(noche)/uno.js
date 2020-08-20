@@ -31,11 +31,11 @@ function mostrar()
 		
 		do{
 			temperatura = parseInt(prompt("Ingrese su temperatura: "));
-		}while(temperatura <30 && temperatura > 50);
+		}while(isNaN(temperatura));
 
 		do {
 			edad = parseInt(prompt("Ingrese la edad: "));
-		} while (isNaN(edad) && edad>0 && edad<120);
+		} while (isNaN(edad));
 
 		do {
 			sexo = prompt("Ingrese su sexo: f/m");
@@ -57,9 +57,17 @@ function mostrar()
 		acumuladorEdad = acumuladorEdad + edad;
 	}
 
-	promedioEdad = acumuladorEdad / 5;
+	promedioEdad = acumuladorEdad / i;
 
 	console.log("La cantidad de mujeres son: " + contadorMujeres + " y la cantidad de hombres son: " + contadorHombres);
 	console.log("El promedio de edad es: " + promedioEdad);
-	console.log("La mujer con mas temperatura es: " + mujerConMasTemperatura);
+
+	if(contadorMujeres > 0)
+	{
+		console.log("La mujer con mas temperatura es: " + mujerConMasTemperatura);
+	}
+	else
+	{
+		console.log("No se ingresaron mujeres.");
+	}
 }
