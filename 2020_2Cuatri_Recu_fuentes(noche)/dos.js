@@ -67,5 +67,5 @@ function mostrar()
 
   alert("El peso total es: " + acumuladorPeso); // A)
   alert("La marca mas cara de los liquidos es: " + marcaLiquidoMasCaro); // B)
-  alert("La marca mas barata de los solidos es: " + marcaSolidoMasLiviano); // C)
+  alert("La marca mas liviana de los solidos es: " + marcaSolidoMasLiviano); // C)
 }
